@@ -2,7 +2,7 @@ app_name = "old_library"
 app_title = "Old Books"
 app_publisher = "Kibet SAng"
 app_description = "This is a Training Apps"
-app_email = "kibetsang@protonmail.com"
+app_email = "k@protonmail.com"
 app_license = "mit"
 # required_apps = []
 
