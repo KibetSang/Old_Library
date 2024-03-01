@@ -1,22 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "BOOK.###",
  "creation": "2024-02-29 16:36:32.358031",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "item_tab",
+  "listing_descriptions_section",
   "item",
-  "descriptions",
-  "column_break_fpty",
+  "column_break_xecb",
   "code",
-  "bought"
+  "listing_details_tab",
+  "listing_details_section",
+  "description",
+  "column_break_sqsg",
+  "route",
+  "prices_tab",
+  "listing_section",
+  "column_break_fpty",
+  "descriptions",
+  "column_break_amha",
+  "image",
+  "publishing_section",
+  "is_published"
  ],
  "fields": [
   {
    "fieldname": "item",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Item",
+   "label": "Item Name",
    "reqd": 1
   },
   {
@@ -24,27 +38,101 @@
    "fieldtype": "Column Break"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "code",
-   "fieldtype": "Data",
-   "label": "Code"
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Acquired On"
   },
   {
    "fieldname": "descriptions",
-   "fieldtype": "Data",
-   "label": "Descriptions"
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price"
   },
   {
-   "fieldname": "bought",
-   "fieldtype": "Date",
-   "label": "Bought "
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "listing_section",
+   "fieldtype": "Section Break",
+   "label": "Listing"
+  },
+  {
+   "fieldname": "listing_descriptions_section",
+   "fieldtype": "Section Break",
+   "label": "Listing Descriptions"
+  },
+  {
+   "bold": 1,
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "bold": 1,
+   "fieldname": "item_tab",
+   "fieldtype": "Tab Break",
+   "label": "Item",
+   "show_dashboard": 1
+  },
+  {
+   "fieldname": "column_break_xecb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "listing_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Listing Details"
+  },
+  {
+   "bold": 1,
+   "fieldname": "listing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Listing Details"
+  },
+  {
+   "fieldname": "prices_tab",
+   "fieldtype": "Tab Break",
+   "label": "Prices"
+  },
+  {
+   "fieldname": "column_break_amha",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sqsg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "publishing_section",
+   "fieldtype": "Section Break",
+   "label": "Publishing"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2024-02-29 16:41:52.360737",
+ "modified": "2024-03-01 15:10:33.229318",
  "modified_by": "Administrator",
  "module": "Old Books",
  "name": "Listing",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -61,7 +149,9 @@
   }
  ],
  "quick_entry": 1,
+ "route": "list",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "item"
 }
