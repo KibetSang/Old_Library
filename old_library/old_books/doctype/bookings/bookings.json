@@ -10,10 +10,16 @@
   "id",
   "price",
   "column_break_cyib",
-  "description"
+  "description",
+  "book_details_section",
+  "discount",
+  "column_break_eewl",
+  "total_price"
  ],
  "fields": [
   {
+   "allow_in_quick_entry": 1,
+   "collapsible": 1,
    "fieldname": "bookings_section_section",
    "fieldtype": "Section Break",
    "label": "Bookings Section"
@@ -21,11 +27,13 @@
   {
    "fieldname": "book_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Book Name"
   },
   {
    "fieldname": "id",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "ID"
   },
   {
@@ -41,11 +49,35 @@
    "fieldname": "description",
    "fieldtype": "Long Text",
    "label": "Description"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "book_details_section",
+   "fieldtype": "Section Break",
+   "label": "Book Details"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Price",
+   "non_negative": 1,
+   "options": "total_price = price - discount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Int",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "column_break_eewl",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-29 19:49:49.616279",
+ "modified": "2024-03-01 07:20:14.534653",
  "modified_by": "Administrator",
  "module": "Old Books",
  "name": "Bookings",
