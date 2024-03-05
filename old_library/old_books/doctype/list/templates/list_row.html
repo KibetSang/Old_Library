@@ -3,12 +3,12 @@
 </div> -->
 <!-- this is a sample default list template -->
 
-<div class="card" style="width: auto;">
-	<img class="card-image-top" src="{{doc.image}}">
+<div class="card" style="width:18rem">
+	<img class="card-img-top" src="{{doc.image}}">
 	<div class="card-body">
-		<h5 class ="card-title">{{}doc.item_name}</h5>
+		<h5 class ="card-title">{{ doc.item_name }}</h5>
 		<p class="card-text">{{doc.price}}</p>
-		<a href="{{doc.route}}" class="btn btn-success">View</a>
+		<a href="{{ doc.route }}" class="btn btn-success">View</a>
 	</div>
 
 </div>

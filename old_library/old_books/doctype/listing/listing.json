@@ -6,23 +6,17 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "item_tab",
+  "prices_tab",
   "listing_descriptions_section",
   "item",
+  "descriptions",
   "column_break_xecb",
   "code",
-  "listing_details_tab",
+  "image",
   "listing_details_section",
   "description",
   "column_break_sqsg",
   "route",
-  "prices_tab",
-  "listing_section",
-  "column_break_fpty",
-  "descriptions",
-  "column_break_amha",
-  "image",
-  "publishing_section",
   "is_published"
  ],
  "fields": [
@@ -32,10 +26,6 @@
    "in_list_view": 1,
    "label": "Item Name",
    "reqd": 1
-  },
-  {
-   "fieldname": "column_break_fpty",
-   "fieldtype": "Column Break"
   },
   {
    "allow_in_quick_entry": 1,
@@ -56,14 +46,9 @@
    "label": "Image"
   },
   {
-   "fieldname": "listing_section",
-   "fieldtype": "Section Break",
-   "label": "Listing"
-  },
-  {
    "fieldname": "listing_descriptions_section",
    "fieldtype": "Section Break",
-   "label": "Listing Descriptions"
+   "label": "Item Descriptions"
   },
   {
    "bold": 1,
@@ -73,20 +58,8 @@
    "label": "Description"
   },
   {
-   "bold": 1,
-   "fieldname": "item_tab",
-   "fieldtype": "Tab Break",
-   "label": "Item",
-   "show_dashboard": 1
-  },
-  {
    "fieldname": "column_break_xecb",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "listing_details_tab",
-   "fieldtype": "Tab Break",
-   "label": "Listing Details"
   },
   {
    "bold": 1,
@@ -100,10 +73,6 @@
    "label": "Prices"
   },
   {
-   "fieldname": "column_break_amha",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "column_break_sqsg",
    "fieldtype": "Column Break"
   },
@@ -111,11 +80,6 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
-  },
-  {
-   "fieldname": "publishing_section",
-   "fieldtype": "Section Break",
-   "label": "Publishing"
   },
   {
    "default": "0",
@@ -128,7 +92,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-03-01 15:10:33.229318",
+ "modified": "2024-03-01 16:09:19.528267",
  "modified_by": "Administrator",
  "module": "Old Books",
  "name": "Listing",
